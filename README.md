@@ -1,50 +1,82 @@
-# Welcome to your Expo app 👋
+is a mobile application designed to connect amateur soccer players, allowing them to find and organize matches, join teams, and manage their player profiles. Built with React Native and Expo, this app aims to create a vibrant community of soccer enthusiasts.
+Features
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Match Finder: Browse and join available soccer matches in your area.
+Match Creation: Organize your own matches and invite other players.
+Player Profiles: Create and manage your player profile, including skills, preferred positions, and availability.
+Team Management: Form teams with other players for recurring matches or tournaments.
+Ratings & Reviews: Rate your teammates and opponents after matches to build a trusted community.
+Real-time Updates: Receive notifications about match changes, team invitations, and more.
 
-## Get started
+Technologies Used
 
-1. Install dependencies
+React Native
+Expo
+TypeScript
+React Navigation
+Expo Router
+AsyncStorage for local data persistence
 
-   ```bash
-   npm install
-   ```
+Getting Started
+Prerequisites
 
-2. Start the app
+Node.js (v14 or later)
+npm or yarn
+Expo CLI
+iOS Simulator or Android Emulator (or a physical device for testing)
 
-   ```bash
-    npx expo start
-   ```
+Installation
 
-In the output, you'll find options to open the app in a
+Clone the repository:
+Copygit clone https://github.com/yourusername/futbol-amateur-app.git
+cd futbol-amateur-app
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Install dependencies:
+Copynpm install
+# or
+yarn install
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Start the Expo development server:
+Copynpx expo start
 
-## Get a fresh project
+Run the app on your preferred platform:
 
-When you're ready, run:
+Press i for iOS Simulator
+Press a for Android Emulator
+Or scan the QR code with the Expo Go app on your physical device
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+Project Structure
+Copyfutbol-amateur-app/
+├── app/
+│   ├── (tabs)/
+│   │   ├── index.tsx        # Home screen
+│   │   ├── matches.tsx      # Match list screen
+│   │   └── profile.tsx      # User profile screen
+│   ├── login.tsx            # Login screen
+│   └── register.tsx         # Registration screen
+├── components/
+│   ├── MatchCard.tsx        # Reusable match card component
+│   └── UserAvatar.tsx       # User avatar component
+├── constants/
+│   └── Colors.ts            # App color scheme
+├── hooks/
+│   └── useAuth.ts           # Custom hook for authentication
+├── navigation/
+│   └── TabBarIcon.tsx       # Tab bar icon component
+├── App.tsx                  # Main app component
+└── package.json             # Project dependencies and scripts
+Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+Acknowledgments
 
-To learn more about developing your project with Expo, look at the following resources:
+Thanks to all the contributors who have helped shape this project.
+Special thanks to the React Native and Expo communities for their excellent documentation and support.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Contact
+For any queries or suggestions, please open an issue in this repository or contact the maintainer at gonzalolavin99@gmail.com.
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Happy coding and enjoy your matches! ⚽️🎉
