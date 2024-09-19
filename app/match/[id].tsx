@@ -51,14 +51,14 @@ export default function MatchDetailsScreen() {
         <Text style={[styles.detail, { color: colors.text }]}>
           Jugadores: {matchDetails.playersJoined}/{matchDetails.totalPlayers}
         </Text>
-        <Text style={[styles.detail, { color: colors.text }]}>Precio: ${matchDetails.price}</Text>
+        <Text style={[styles.detail, { color: colors.text }]}>Price: ${matchDetails.price}</Text>
         <Text style={[styles.description, { color: colors.text }]}>{matchDetails.description}</Text>
       </View>
       <TouchableOpacity 
         style={[styles.joinButton, { backgroundColor: colors.primary }]}
         onPress={handleJoinMatch}
       >
-        <Text style={styles.joinButtonText}>Unirse al Partido</Text>
+        <Text style={styles.joinButtonText}>Join Match</Text>
       </TouchableOpacity>
     </View>
   );

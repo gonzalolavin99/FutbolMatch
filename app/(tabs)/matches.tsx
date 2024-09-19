@@ -28,15 +28,13 @@ export default function MatchesScreen() {
 
   const handleMatchPress = (id: string) => {
     // Navegar a la pantalla de detalles del partido
-    const handleMatchPress = (id: string) => {
-        router.push(`/match/${id}` as any);
-      };
+    router.push(`/match/${id}` as any);
   };
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
       <FlatList
-      style={styles.flat}
+        style={styles.flat}
         data={matches}
         renderItem={({ item }) => (
           <MatchCard
@@ -54,12 +52,11 @@ export default function MatchesScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    
   },
   list: {
     padding: Layout.padding,
   },
-  flat : {
-    marginTop:30
+  flat: {
+    marginTop: 30
   }
 });
